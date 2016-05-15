@@ -1,0 +1,29 @@
+//
+//  xk.pch
+//  UI大全
+//
+//  Created by starain on 16/4/2.
+//  Copyright (c) 2016年 King. All rights reserved.
+//
+
+#ifndef UI___xk_pch
+#define UI___xk_pch
+#endif
+
+#ifdef DEBUG
+#define XKLog(...) NSLog(__VA_ARGS__)
+#else
+#define XKLog(...)
+#endif
+
+#ifdef __OBJC__
+//全局宏定义
+#define mainScreenW [UIScreen mainScreen].bounds.size.width
+#define mainScreenH [UIScreen mainScreen].bounds.size.height
+#define random_colorValue arc4random() % 255 / 255.0
+#define colorRandom [UIColor colorWithRed:random_colorValue green:random_colorValue blue:random_colorValue alpha:1]
+//全局头文件
+#import "UIView+FrameView.h"
+#import "UIImage+fromColor.h"
+#import "Trans.h"
+#endif

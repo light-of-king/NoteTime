@@ -1,0 +1,16 @@
+//
+//  Config.xcconfig
+//  test
+//
+//  Created by xukai on 16/4/20.
+//  Copyright © 2016年 King. All rights reserved.
+//
+
+//:completeSettings = some
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+//:completeSettings = some
+GCC_PREFIX_HEADER = $(SRCROOT)/$(PRODUCT_NAME)/Supporting Files/xk.pch
+
+//:configuration = some
+WARNING_CFLAGS = -Wno-deprecated-declarations
